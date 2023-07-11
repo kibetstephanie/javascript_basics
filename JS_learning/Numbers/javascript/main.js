@@ -1,18 +1,18 @@
-// Strings
-const myVariable = "Mathematics";
+//Numbers
 
-//The length property
-console.log(myVariable.length); //11
-console.log("Every good boy does fine".length); //24
+//An integer is a whole number
+const myNumber = 42;
+const myFloat = 42.01;
+const myString = "42abc";
 
-//String Methods
-console.log(myVariable.charAt(0)); //checks what character is at which index // M
-console.log(myVariable.indexOf("mat")); //checks where the index of the mentioned is // 5
-console.log(myVariable.lastIndexOf("at")); //checks where the first letter of the mentioned is // 6
-console.log(myVariable.slice(5, 8)); //returns the characters from the starting position to the ending position without the exact ending position // mat
-console.log(myVariable.toUpperCase()); //changes to upper case
-console.log(myVariable.toLowerCase()); //changes to lower case
-console.log(myVariable.includes("div")); //checks if it is included in the string // false
-console.log(myVariable.split("e")); //splits the string where the character occurs // ["Math" , "matics"]
-console.log("John,Joe,Dave".split(",")); // ["John", "Joe", "Dave"]
-console.log(myVariable.split("")); // [ "M", "a", "t", "h", "e", "m", "a", "t", "i", "c", … ]
+console.log(Number(myString) + 3); //changes a string to a number
+console.log(Number.isInteger(myNumber)); //checks if it is an integer //true
+console.log(Number.parseFloat(myString)); //removes non integers and changes it to a number// 42
+console.log(myFloat.toFixed(2)); //returns 2 dp and is a string //42.01
+console.log(Number.parseInt(myString)); // removes non integers and changes it to a number //42
+console.log(Number.isInteger(myNumber)); //checks if it is integer // true
+console.log(myFloat.toString()); // changes to a string typeof checks if it is a string // string
+console.log(Number.isInteger(myNumber)); //checks if it is an Integer
+console.log(Number.parseFloat("42.325abc").toFixed(2).toString());
+console.log(Number.isNaN("Dave")); //checks is a value is a number // false
+console.log(isNaN("Dave")); //checks if the value is NaN (not a number) //true
